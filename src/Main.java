@@ -6,29 +6,30 @@
 // Press Shift+F9 to start debugging your code. We have set one breakpoint
 // for you, but you can always add more by pressing Ctrl+F8.
 
-import x.saveProgram.SaveProgram;
+import x.saveProgram.*;
 import java.util.*;
 import java.util.function.Consumer;
 
 public class Main {
-    public static void main(String[] args) {
+      public static void main(String[] args) {
 
-        //MethodCaller();
-    }
-    public static void MethodCaller(){
-        int[] arr1 = {1,5,8,2,9};
-        int[] arr2 = {2,3,7,4,6,5,1};
+            MethodCaller();
+      }
 
-        SaveProgram.EvaluateReversePolishNotation();
+      public static void MethodCaller() {
+            int[] arr1 = { 1, 5, 8, 2, 9 };
+            int[] arr2 = { 2, 3, 7, 4, 6, 5, 1 };
 
-        SaveProgram.AddUnique(arr1,arr2);
-        try {
-            Student s = new Student(1,"", Student.cls.II);
-            System.out.println("Student Added");
-        } catch (InvalidNameException e) {
-            System.out.println(e.getMessage());
-        }
-        SaveProgram.RotateArrayInJava();
-        SaveProgram.ButterFlyPatttern();
-    }
+            SaveProgram.EvaluateReversePolishNotation();
+
+            // SaveProgram.AddUnique(arr1,arr2);
+            // try {
+            // Student s = new Student(1,"", Student.cls.II);
+            // System.out.println("Student Added");
+            // } catch (InvalidNameException e) {
+            // System.out.println(e.getMessage());
+            // }
+            SaveProgram.RotateArrayInJava();
+            SaveProgram.ButterFlyPatttern();
+      }
 }
